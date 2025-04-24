@@ -1,0 +1,45 @@
+name: unithon
+description: 여행 경로 추천 앱
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.0.0
+  cupertino_icons: ^1.0.6
+  http: ^1.2.1
+  provider: ^6.1.2
+  shared_preferences: ^2.2.2
+  google_maps_flutter: ^2.6.1 # 오타 수정됨 Maps_flutter_web 은 별도 패키지 아님
+  flutter_secure_storage: ^9.0.0
+  intl: ^0.18.1
+  flutter_rating_bar: ^4.0.1
+  cached_network_image: ^3.3.1
+  lottie: ^3.1.0
+  flutter_dotenv: ^5.1.0
+  geolocator: ^11.0.0
+  firebase_core: ^2.29.0
+  firebase_auth: ^4.19.0
+  # firebase_auth_web: ^5.10.0 # firebase_auth 가 웹 지원 포함 (별도 추가 불필요)
+  google_sign_in: ^6.2.1 # 웹 지원 포함
+  flutter_svg: ^2.0.10+1
+  js: ^0.6.7 # <-- JavaScript 상호작용을 위해 추가
+  flutter_polyline_points: ^2.0.0 # 또는 최신 버전
+  map_launcher: ^3.4.0 # 또는 최신 버전
+  url_launcher: ^6.3.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/animations/
+    - assets/icons/
+    - assets/images/
